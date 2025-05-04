@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SistemaEduWeb.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Content/css") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="sweetalert.min.js" Assembly="System.Web" Path="~/Scripts/sweetalert.min.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-dark" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom text-light">EduWeb</div>
+                <div class="list-group list-group-flush" style="width: 20rem; text-align: center;">
+                    <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                        <ContentTemplate>
+                            <asp:Button ID="BtnLecMultimedia" runat="server" Text="Lecciones multimedia" CssClass="list-group-item list-group-item-action list-group-item-primary p-1" OnClick="BtnLecMultimedia_Click" />
+                            <asp:Button ID="BtnActsInterac" runat="server" Text="Actividades interactivas" CssClass="list-group-item list-group-item-action list-group-item-primary p-1" OnClick="BtnActsInterac_Click" />
+                            <asp:Button ID="BtnSegProgres" runat="server" Text="Seguimiento progreso" CssClass="list-group-item list-group-item-action list-group-item-primary p-1" OnClick="BtnSegProgres_Click" />
+                            <asp:Button ID="BtnTareasEjerc" runat="server" Text="Tareas y ejercicios" CssClass="list-group-item list-group-item-action list-group-item-primary p-1" OnClick="BtnTareasEjerc_Click" />
+                            <asp:Button ID="BtnCargaContenidos" runat="server" Text="Carga de contenidos" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnCargaContenidos_Click" />
+                            <asp:Button ID="BtnGestEst" runat="server" Text="Gestión de alumnos y evaluación" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnGestEst_Click" />
+                            <asp:Button ID="BtnReportesEst" runat="server" Text="Reportes por estudiante" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnReportesEst_Click" />
+                            <asp:Button ID="BtnHerrAsinc" runat="server" Text="Herramientas de enseñanza asincrónica" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnHerrAsinc_Click" />
+                            <asp:Button ID="BtnProgresInforms" runat="server" Text="Progreso e informes" CssClass="list-group-item list-group-item-action list-group-item-warning p-1" OnClick="BtnProgresInforms_Click" />
+                            <asp:Button ID="BtnRecomendaciones" runat="server" Text="Recomendaciones personalizadas" CssClass="list-group-item list-group-item-action list-group-item-warning p-1" OnClick="BtnRecomendaciones_Click" />
+                            <br />
+                            <asp:Button ID="BtnCerrarSesion" runat="server" Text="Cerrar sesión" CssClass="list-group-item list-group-item-action list-group-item-danger p-1 text-danger" OnClick="BtnCerrarSesion_Click" />
+                            <br />
+                            <a class="list-group-item list-group-item-info p-1 text-dark">
+                                <div class="small">Bienvenido:</div>
+                                <span id="NombreUsuario" runat="server">------------</span>
+                                <br />
+                                <span class="badge text-bg-primary" id="Rol" runat="server">-----</span>
+                                <br />
+                                <span id="IdEstudiante" runat="server" visible="false"></span>
+                                <br />
+                                <span class="badge text-bg-primary" id="RolEst" runat="server" visible="false">Estudiante</span>
+                            </a>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Page content-->
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="loaderOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.7); z-index: 9999; text-align: center;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <div class="spinner-border text-primary" style="width: 4rem; height: 4rem;" role="status">
+                    <span class="visually-hidden">Cargando...</span>
+                </div>
+                <p class="mt-2">Por favor espera...</p>
+            </div>
+        </div>
+
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.bundle.js") %>
+        <%: Scripts.Render("~/Scripts/scripts.js") %>
+        <%: Scripts.Render("~/Scripts/fontawesome/all.min.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>
