@@ -223,7 +223,6 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SeguimientoProgreso.aspx" />
     <Content Include="Site.Master" />
-    <Content Include="TareasEjercicios.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -350,13 +349,6 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
-    <Compile Include="TareasEjercicios.aspx.cs">
-      <DependentUpon>TareasEjercicios.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="TareasEjercicios.aspx.designer.cs">
-      <DependentUpon>TareasEjercicios.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

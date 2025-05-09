@@ -46,7 +46,6 @@
                             <asp:Button ID="BtnLecMultimedia" runat="server" Text="Lecciones multimedia" CssClass="list-group-item list-group-item-action list-group-item-primary p-1" OnClick="BtnLecMultimedia_Click" />
                             <asp:Button ID="BtnActsInterac" runat="server" Text="Actividades interactivas" CssClass="list-group-item list-group-item-action list-group-item-primary p-1" OnClick="BtnActsInterac_Click" />
                             <asp:Button ID="BtnSegProgres" runat="server" Text="Seguimiento progreso" CssClass="list-group-item list-group-item-action list-group-item-primary p-1" OnClick="BtnSegProgres_Click" />
-                            <asp:Button ID="BtnTareasEjerc" runat="server" Text="Tareas y ejercicios" CssClass="list-group-item list-group-item-action list-group-item-primary p-1" OnClick="BtnTareasEjerc_Click" />
                             <asp:Button ID="BtnCargaContenidos" runat="server" Text="Carga de contenidos" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnCargaContenidos_Click" />
                             <asp:Button ID="BtnGestEst" runat="server" Text="Gestión de alumnos y evaluación" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnGestEst_Click" />
                             <asp:Button ID="BtnReportesEst" runat="server" Text="Reportes por estudiante" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnReportesEst_Click" />

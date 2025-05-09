@@ -38,7 +38,6 @@ namespace SistemaEduWeb
                 BtnLecMultimedia.Visible = false; //ESTUDIANTE
                 BtnActsInterac.Visible = false; //ESTUDIANTE
                 BtnSegProgres.Visible = false; //ESTUDIANTE
-                BtnTareasEjerc.Visible = false; //ESTUDIANTE
                 BtnProgresInforms.Visible = false; //PADRE
                 BtnRecomendaciones.Visible = false; //PADRE
                 Rol.Attributes["class"] = Rol.Attributes["class"].Replace("text-bg-primary", "text-bg-success");
@@ -48,7 +47,6 @@ namespace SistemaEduWeb
                 BtnLecMultimedia.Visible = false; //ESTUDIANTE
                 BtnActsInterac.Visible = false; //ESTUDIANTE
                 BtnSegProgres.Visible = false; //ESTUDIANTE
-                BtnTareasEjerc.Visible = false; //ESTUDIANTE
                 BtnCargaContenidos.Visible = false; //DOCENTE
                 BtnGestEst.Visible = false; //DOCENTE
                 BtnReportesEst.Visible = false; //DOCENTE
