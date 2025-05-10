@@ -96,7 +96,7 @@ namespace SistemaEduWeb
 
         protected void BtnProgresInforms_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ProgresoInformes.aspx");
+            Response.Redirect("ProgesoInformes.aspx");
         }
 
         protected void BtnRecomendaciones_Click(object sender, EventArgs e)
