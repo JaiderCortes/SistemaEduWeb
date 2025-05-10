@@ -143,11 +143,9 @@
     <Content Include="favicon.ico" />
     <Content Include="GestionEstudiantes.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="HerramientasAsincronicas.aspx" />
     <Content Include="LeccionesMultimedia.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="ProgesoInformes.aspx" />
-    <Content Include="ProgresoInformes.aspx" />
     <Content Include="RecomendacionesPersonalizadas.aspx" />
     <Content Include="ReportesEstudiante.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -279,13 +277,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="HerramientasAsincronicas.aspx.cs">
-      <DependentUpon>HerramientasAsincronicas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HerramientasAsincronicas.aspx.designer.cs">
-      <DependentUpon>HerramientasAsincronicas.aspx</DependentUpon>
-    </Compile>
     <Compile Include="LeccionesMultimedia.aspx.cs">
       <DependentUpon>LeccionesMultimedia.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -306,13 +297,6 @@
     </Compile>
     <Compile Include="ProgesoInformes.aspx.designer.cs">
       <DependentUpon>ProgesoInformes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ProgresoInformes.aspx.cs">
-      <DependentUpon>ProgresoInformes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ProgresoInformes.aspx.designer.cs">
-      <DependentUpon>ProgresoInformes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecomendacionesPersonalizadas.aspx.cs">

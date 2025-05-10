@@ -29,7 +29,6 @@ namespace SistemaEduWeb
                 BtnCargaContenidos.Visible = false; //DOCENTE
                 BtnGestEst.Visible = false; //DOCENTE
                 BtnReportesEst.Visible = false; //DOCENTE
-                BtnHerrAsinc.Visible = false; //DOCENTE
                 BtnProgresInforms.Visible = false; //PADRE
                 BtnRecomendaciones.Visible = false; //PADRE
             }
@@ -50,7 +49,6 @@ namespace SistemaEduWeb
                 BtnCargaContenidos.Visible = false; //DOCENTE
                 BtnGestEst.Visible = false; //DOCENTE
                 BtnReportesEst.Visible = false; //DOCENTE
-                BtnHerrAsinc.Visible = false; //DOCENTE
                 Rol.Attributes["class"] = Rol.Attributes["class"].Replace("text-bg-primary", "text-bg-warning");
 
                 IdEstudiante.InnerText = $"Estudiante: {Session["IdEstudiantePadre"]}";
@@ -81,11 +79,6 @@ namespace SistemaEduWeb
             Response.Redirect("SeguimientoProgreso.aspx");
         }
 
-        protected void BtnTareasEjerc_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("TareasEjercicios.aspx");
-        }
-
         protected void BtnCargaContenidos_Click(object sender, EventArgs e)
         {
             Response.Redirect("CargaContenidos.aspx");
@@ -99,11 +92,6 @@ namespace SistemaEduWeb
         protected void BtnReportesEst_Click(object sender, EventArgs e)
         {
             Response.Redirect("ReportesEstudiante.aspx");
-        }
-
-        protected void BtnHerrAsinc_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("HerramientasAsincronicas.aspx");
         }
 
         protected void BtnProgresInforms_Click(object sender, EventArgs e)

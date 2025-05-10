@@ -78,15 +78,6 @@ namespace SistemaEduWeb
         protected global::System.Web.UI.WebControls.Button BtnReportesEst;
 
         /// <summary>
-        /// Control BtnHerrAsinc.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnHerrAsinc;
-
-        /// <summary>
         /// Control BtnProgresInforms.
         /// </summary>
         /// <remarks>

@@ -49,7 +49,6 @@
                             <asp:Button ID="BtnCargaContenidos" runat="server" Text="Carga de contenidos" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnCargaContenidos_Click" />
                             <asp:Button ID="BtnGestEst" runat="server" Text="Gestión de alumnos y evaluación" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnGestEst_Click" />
                             <asp:Button ID="BtnReportesEst" runat="server" Text="Reportes por estudiante" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnReportesEst_Click" />
-                            <asp:Button ID="BtnHerrAsinc" runat="server" Text="Herramientas de enseñanza asincrónica" CssClass="list-group-item list-group-item-action list-group-item-success p-1" OnClick="BtnHerrAsinc_Click" />
                             <asp:Button ID="BtnProgresInforms" runat="server" Text="Progreso e informes" CssClass="list-group-item list-group-item-action list-group-item-warning p-1" OnClick="BtnProgresInforms_Click" />
                             <asp:Button ID="BtnRecomendaciones" runat="server" Text="Recomendaciones personalizadas" CssClass="list-group-item list-group-item-action list-group-item-warning p-1" OnClick="BtnRecomendaciones_Click" />
                             <br />
